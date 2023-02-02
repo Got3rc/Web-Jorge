@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* 'Press Start 2P'*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); /* 'PT Sans' */
+
+
+/*  */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'PT Sans'; 
+    color:333; /* color de la pagina blanco claro */
+    font-size: 1.2rem; /* fuente de la web un poco mas grande */
+    line-height: 1.4em; /* interlineado */
+    margin:0; /* quitar margenes body por defectoa */
+}
+
+.wave{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: -5rem;
+}
+
+h1 {
+    line-height: 1.4em;
+    font-size: 1.3em;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 100%;
+    height: 35rem;
+    background: #474346;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 7%, 18%, 0.647), hsla(317, 11%, 31%, 0.664)), url(../img/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(343, 7%, 19%, 0.923), hsla(315, 3%, 24%, 0.879)), url(../img/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.main {
+    margin-top:-25px;
+}
+
+.header {
+    background: rgba(95, 95, 95, 0.833);
+    color: greenyellow;
+    padding:1.5rem 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+
+
+
+.header a {
+    
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5em;
+    color:#20C20E;
+    
+}
+
+
+.navigation ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding:  0.5rem 0.5rem;
+    transition: all 0.4s linear;
+    border-radius:5px;
+    color:white;
+}
+
+.navigation ul li a:hover {
+    background-color: #4a4a4a;
+}
+
+.footer {
+    background-color: #545454;
+    padding:  0.2rem 0;
+    margin-top: 6rem;
+    text-align: center;
+    color:white;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.present {
+    font-family:'Press Start 2P' ;
+    text-align: center;
+    padding-top: 15rem;
+    color:#ffffff;
+}
+
+.cuerpo {
+    
+    width: 85%;
+    max-width: 1000px;
+    margin: 2rem auto;
+ 
+}
+
+img.imagen2 {
+    display: block;
+    float: left;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:600px) {
+
+    .header.bc {
+        background: rgb(0, 0, 0);
+    }
+
+    .logo {
+        
+        margin: auto;
+        
+    }
+
+    .header{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.686);
+    }
+
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 3rem;
+        fill: #20C20E;
+        margin: auto;
+        height: 40px;
+    }
+
+    .navigation {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+    
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    
+    }
+
+
+    .navigation ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding:  0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius:5px;
+        color:rgb(255, 255, 255);
+        margin-top:5px;
+
+        
+    }
+    
+    .navigation ul li a:hover {
+        background-color: #fcfcfc;
+        color: #000000;
+    }
+
+}
+
+
+
+
